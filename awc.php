@@ -12,7 +12,7 @@
 
 
   //$url = $endpoint + $datasource +"&"+ $requestType +"&"+ $format +"&"+ $stationstring +"&"+ $time_constraint;
-  $url = "{$endpoint}{$datasource}{"&"}{$requestType}{"&"}{$format}{"&"}{$stationstring}{"&"}{$time_constraint}";
+  $url = "{$endpoint}{$datasource}&{$requestType}&{$format}&{$stationstring}&{$time_constraint}";
   echo $url;
   /*
   if (($response_xml_data = file_get_contents($url))===false){
