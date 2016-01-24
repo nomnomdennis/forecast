@@ -23,6 +23,9 @@
          }
      } else {
         print_r($data);
+        $parsed_data = xml_parse_into_struct($data);
+        print_r("<br>");
+        print_r($parsed_data);
      }
   }
 ?>
