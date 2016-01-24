@@ -22,8 +22,7 @@
              echo "\t", $error->message;
          }
      } else {
-        print_r($data)[0];
-        print_r($data)[1];
+        print_r($data)[0][0];
      }
   }
 ?>
