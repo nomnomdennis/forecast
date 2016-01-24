@@ -22,10 +22,8 @@
              echo "\t", $error->message;
          }
      } else {
-        print_r($data);
-        $parsed_data = xml_parse_into_struct($data);
-        print_r("--------------");
-        print_r($parsed_data);
+        print_r($data)[0];
+        print_r($data)[1];
      }
   }
 ?>
