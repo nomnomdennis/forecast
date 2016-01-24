@@ -2,17 +2,17 @@
   $code = htmlspecialchars($_POST["code"]);
 
   // build url
-  dataSource=metars&requestType=retrieve&format=xml&stationString=VHHH
+
   $endpoint = "https://aviationweather.gov/adds/dataserver_current/httpparam?";
   $datasource = "dataSource=metars";
   $requestType = "requestType=retrieve";
   $format ="format=xml";
   $stationstring= $code;
-  $time_constraint = "&hoursBeforeNow=1&mostRecent=true"
+  $time_constraint = "&hoursBeforeNow=1&mostRecent=true";
 
 
   $url = $endpoint+$datasource+"&"+$requestType"&"+$format+$stationstring+$time_constraint;
-  print_r($url)
+  print_r($url);
   /*
   if (($response_xml_data = file_get_contents($url))===false){
       echo "Error fetching XML\n";
