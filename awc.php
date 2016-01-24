@@ -12,7 +12,7 @@
 
 
   $url = $endpoint + $datasource +"&"+ $requestType +"&"+ $format +"&"+ $stationstring +"&"+ $time_constraint;
-  print_r($url);
+  echo $url;
   /*
   if (($response_xml_data = file_get_contents($url))===false){
       echo "Error fetching XML\n";
