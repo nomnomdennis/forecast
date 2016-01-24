@@ -7,11 +7,11 @@
   $datasource = "dataSource=metars";
   $requestType = "requestType=retrieve";
   $format ="format=xml";
-  $stationstring= $code;
-  $time_constraint = "&hoursBeforeNow=1&mostRecent=true";
+  $stationstring= "stationString=" + $code;
+  $time_constraint = "hoursBeforeNow=1&mostRecent=true";
 
 
-  $url = $endpoint+$datasource+"&"+$requestType"&"+$format+$stationstring+$time_constraint;
+  $url = $endpoint + $datasource +"&"+ $requestType +"&"+ $format +"&"+ $stationstring +"&"+ $time_constraint;
   print_r($url);
   /*
   if (($response_xml_data = file_get_contents($url))===false){
